@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinemática Inversa</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Cinemática Inversa</h1>
+    </div>
+    <div class="content">
+        <p class="info">
+            Insira os valores corretamente nas caixas de texto.
+        </p>
+
+        <div class="value">
+            <div>
+                Primeiro Elo
+                <input type="number" name="elo1" id="elo1" placeholder="Tamanho do Primeiro Elo" min="0">
+            </div>
+
+            <div>
+                Segundo Elo
+                <input type="number" name="elo2" id="elo2" placeholder="Tamanho do Segundo Elo" min="0">
+            </div>
+
+            <div>
+                Posição X
+                <input type="number" name="x" id="x" placeholder="Valor da Posição Y">
+            </div>
+
+            <div>
+                Posição Y
+                <input type="number" name="y" id="y" placeholder="Valor da Posição X">
+            </div>
+
+            <div class="button">
+                <button onclick="calcular ()">Calcular os angulos</button>
+            </div>
+        </div>
+
+        <div>
+            <p id="resultado"></p>
+        </div>
+    </div>
+
+    <script src="./cineinv.js"></script>
+</body>
+</html>
